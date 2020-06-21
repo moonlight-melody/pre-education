@@ -5,3 +5,9 @@
 <출력>
  45
 """
+s=0
+for i in range(1,101):
+    s+=i
+    if s>=1000:
+        print(i)
+        break

@@ -7,3 +7,14 @@ print(gcd(12,6))
 <출력>
 6
 """
+def gcd(a,b):
+    while True:
+        if a==b:
+            return a
+        elif a>b:
+            a-=b
+        elif b>a:
+            b-=a
+        else:
+            return 1
+print(gcd(12,6))

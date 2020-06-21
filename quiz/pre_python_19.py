@@ -10,3 +10,10 @@ print(list)
 ['charlie', 'foxtrot']
 
  """
+a = ['alpha', 'bravo', 'charlie', 'delta', 'echo', 'foxtrot', 'golf', 'hotel', 'india']
+b=[]
+for s in a:
+
+    if int(len(s)) == 7:
+        b.append(s)
+print(b)

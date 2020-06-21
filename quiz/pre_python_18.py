@@ -14,3 +14,11 @@ print(new_list)
 ['exit', 'hi', 'playdata', 'intro']
 
 """
+
+file = ['exit.py','hi.py','playdata.hwp','intro.jpg']
+
+for n in file:
+
+    file[file.index(n)]=(n.split(".")[0])
+
+print(file)

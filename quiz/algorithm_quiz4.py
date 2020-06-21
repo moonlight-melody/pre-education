@@ -17,3 +17,24 @@ print(greedy())
 동전의 종류 :  100 50 10
 100원 동전 10개, 50원 동전 1개, 10원 동전 0개
 '''
+
+v=int(input("액수입력 : "))
+list=list(map(int,input("동전의 종류 : ").split(" ")))
+
+list1=[]
+
+list.sort()
+list.reverse()
+print(list)
+for i in list:
+    if v<i:
+        list1.append(0)
+        pass
+    else:
+        list1.append(v//i)
+        v=v%i
+for i in range(len(list)):
+    print("{}원 동전 {}개".format(list[i],list1[i]),end="")
+    if i!=len(list)-1:
+        print(", ",end="")
+

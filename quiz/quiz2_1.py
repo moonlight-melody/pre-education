@@ -13,3 +13,13 @@ print(is_palindrome("토마토"))
 False
 True
 '''
+def is_palindrome(s):
+    s1=list(s)
+    s1.reverse()
+    s1=("").join(s1)
+    if s==s1:
+        return True
+    return False
+
+print(is_palindrome("radio"))
+print(is_palindrome("토마토"))
